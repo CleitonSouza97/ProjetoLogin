@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*Corpo do Site e Plano de Fundo*/
+
+  background: url(https://picsum.photos/1600/900?random=1);
+  /* Muda o plano de Fundo para uma imagens URL */
+
+  background-size: cover;
+  /* Preenche a imagem na tela completa */
+
+  background-position: center;
+  /* Centraliza a imagem */
+
+  min-height: 100vh;
+  /* Coloca a altura minima da tela para 100% */
+
+  display: flex;
+  /* Faz com que o conteudo fique centralizado */
+
+  align-items: center;
+  /* Alinha o conteudo no centro */
+
+  justify-content: center;
+  /* Justifica o conteudo no centro */
+}
+
+.container {
+  /*Container Caixa Transparente*/
+
+  width: 420px;
+  /* Largura do Layout  */
+
+  background: transparent;
+  /* Deixa o layout transparente */
+
+  border: solid 2px #9b9b9b;
+  /* Cria uma borda no seu layout */
+
+  backdrop-filter: blur(5px);
+  /* Adiciona um efeito de desfoque no fundo do layout */
+
+  padding: 30px 40px;
+  /* Adiciona um espaçamento interno no layout */
+
+  border-radius: 10px;
+  /* Adiciona um raio de borda no layout */
+}
+
+h1 {
+  /*Titulo do Login*/
+
+  font-size: 40px;
+  /* Tamanho da fonte */
+
+  text-align: center;
+  /* Alinha o texto no centro */
+
+  color: #fff;
+  /* Cor do texto */
+}
+
+.input-container {
+  /*Campo div do Login*/
+
+  position: relative;
+  /*Move um elemento em relação à sua posição original usando top, right, bottom e left */
+
+  width: 100%;
+  /* Largura do layout */
+
+  height: 50px;
+  /* Altura do layout */
+
+  margin: 30px 0;
+  /* Adiciona um espaçamento interno no layout 30 cima e baixo e 0 esquerda direita */
+}
+
+.input-container input {
+  /*Campo do Login*/
+
+  width: 100%;
+  /* Largura do layout */
+
+  height: 50%;
+  /* Altura do layout */
+
+  background: transparent;
+  /* Deixa o layout transparente */
+
+  padding: 0 20px;
+  /* Adiciona um espaçamento interno no layout 0 cima e baixo e 20 esquerda direita */
+
+  font-size: 18px;
+  /* Tamanho da fonte */
+
+  border: none;
+  /* Remove a borda do layout */
+
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  /* Adiciona uma borda na parte inferior do layout */
+
+  outline: none;
+  /* Remove a borda do campo de login, quando selecionado */
+
+  border-radius: 10px;
+  /* Adiciona um raio de borda no campo de login */
+
+  font-size: 18px;
+  /* Tamanho da fonte campo de login */
+
+  color: #ffffff;
+  /* Cor do texto do campo de login */
+
+  padding: 20px 45px 20px 20px;
+  /* Adiciona um espaçamento interno no layout 20 cima e baixo e 45 esquerda e 20 direita */
+}
+
+.input-container input::placeholder {
+  /*Campo do Login onde fica tem o texto que some*/
+
+  color: #ffffff;
+  /* Cor do texto do campo de login */
+}
+
+.input-container img {
+  /*Campo do Login onde fica o icone*/
+
+  position: absolute;
+  /*Move um elemento em relação à sua posição original usando top, right, bottom e left */
+
+  top: 10px;
+  /*Move um elemento em relação à sua posição original usando top, right, bottom e left */
+
+  right: 10px;
+  /*Move um elemento em relação à sua posição original usando top, right, bottom e left */
+}
+
+.input-container a {
+  /*Campo do Login onde fica "esqueci a senha" */
+
+  font-size: 12px;
+  /* Tamanho da fonte */
+
+  margin-top: 5px;
+  /* Adiciona um espaçamento interno no layout 5 cima */
+
+  color: #ffffff;
+  /* Cor do texto do campo de login */
+
+  text-decoration: none;
+  /* Remove o sublinhado do texto */
+}
+
+.input-container a:hover {
+  /*Campo do Login onde fica "esqueci a senha" quando passa o mouse */
+
+  text-decoration: underline;
+  /* Adiciona um sublinhado no texto */
+}
+
+.submit_button {
+  /*Botão de Login*/
+
+  width: 100%;
+  /* Largura do layout */
+
+  height: 50px;
+  /* Altura do layout */
+
+  background: #e08d8d;
+  /* Cor de fundo do layout */
+
+  border: none;
+  /* Remove a borda do layout */
+
+  border-radius: 10px;
+  /* Adiciona um raio de borda no layout */
+
+  font-size: 18px;
+  /* Tamanho da fonte */
+
+  color: #ffffff;
+  /* Cor do texto do layout */
+
+  font-weight: bold;
+  /* Deixa o texto em negrito */
+
+  cursor: pointer;
+  /* Adiciona um cursor de mão no layout */
+
+  transition: 0.3s;
+  /* Adiciona uma transição de 0.3 segundos no layout */
+
+  margin-top: 20px;
+  /* Adiciona um espaçamento interno no layout 20 cima */
+
+  outline: none;
+  /* Remove a borda do layout */
+}
+
+.submit_button:hover {
+  /*Botão de Login quando passa o mouse*/
+
+  background: #ebbdbd;
+  /* Cor de fundo do layout */
+}
+
+.input-cadastro p,
+a {
+  /*Campo do Login onde fica "Cadastrar" */
+
+  font-size: 16px;
+  /* Tamanho da fonte */
+
+  font-weight: bold;
+  /* Deixa o texto em negrito */
+
+  margin-top: 5px;
+  /* Adiciona um espaçamento interno no layout 5 cima */
+
+  color: #ffffff;
+  /* Cor do texto do campo de login */
+
+  text-decoration: none;
+  /* Remove o sublinhado do texto */
+}
+
+.input-cadastro a {
+  /*Campo do Login onde fica "Cadastrar" quando passa o mouse */
+
+  font-size: 18px;
+  /* Tamanho da fonte */
+
+  color: #f5e5e5;
+}
+
+.input-cadastro a:hover {
+  /*Campo do Login onde fica "Cadastrar" quando passa o mouse */
+
+  text-decoration: underline;
+  /* Adiciona um sublinhado no texto */
+}
+
+.input-cadastro {
+  /*Campo do Login onde fica "Cadastrar" */
+
+  text-align: center;
+  /* Alinha o texto no centro */
+}
